@@ -8,7 +8,7 @@
 
     <header>
         <div class="perfil-container">
-            <img class="img-perfil" src="https://cdn-3.expansion.mx/dims4/default/0fba836/2147483647/strip/true/crop/1200x630+0+0/resize/1800x945!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F46%2F06%2F8e5ee63142ff9201b82ba8a84a58%2Finteligencia-artificial-que-crea-imagenes.png" alt="logo-danicodex">
+            <img class="img-perfil" src="{{asset('img/uta.png')}}" alt="logo-universidad">
             <div class="contenedor-cabezera">
                 <div class="cabezera1">
                     <h1>Ulises Mtz</h1>

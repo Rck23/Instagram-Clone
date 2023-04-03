@@ -16,7 +16,7 @@
         <aside>
             <h4>Hola de nuevo</h4>
             <h1><b>Instragram Clone</b> permite publicar y ver fotos por usuario, 
-                iniciar sesión y hacer nuevo registro de cuenta. 
+                iniciar sesión y hacer nuevo registro de usuario. 
             </h1>
             
 

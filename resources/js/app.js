@@ -5,7 +5,7 @@ Dropzone.autoDiscover = false;
 
 const dropzone = new Dropzone('#dropzone', {
 
-    dictDefaultMessage: 'Picale aquí para poner tu imagen',
+    dictDefaultMessage: 'Ingresa la imagen del post',
     acceptedFiles: ".png, .jpg, .jpeg, .gif",
     addRemoveLinks: true,
     dictRemoveFile: 'borrar archivo', 
