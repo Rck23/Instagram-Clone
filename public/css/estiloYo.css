@@ -163,14 +163,131 @@ main{
     margin: auto;
     margin-top: 60px;
 }
-.mainCont__grid{
-    display: grid;
-    grid-template-columns: repeat(3,32%);
-    grid-template-rows: repeat(5,auto);
-    gap: 2%;
-    height: auto;
-}
-.mainCont__grid div > img{
+
+
+
+/* Login*/
+
+.login{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container-login {
     width: 100%;
-    cursor: pointer;
-}
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .center-login {
+    width: 350px;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 3px;
+    border-radius: 10%;
+  }
+  .center-login .header-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 17px;
+  }
+  
+  .center-login .inputElement-login {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 37px 0px 37px;
+  }
+  
+  .inputElement-login .inputText-login {
+    padding: 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .inputText-login:focus {
+    outline: gray;
+  }
+  
+  .inputButton-login {
+    background-color: rgb(76, 159, 237);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border: none;
+  }
+  .line-login {
+    display: flex;
+    margin-top: 6px;
+  }
+  .arrow-login {
+    background-color: gray;
+    height: 1px;
+    width: 140px;
+  }
+  .content-login {
+    color: gray;
+    margin-top: -7px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .social__icon-login {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .social__icon-login span {
+
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .forgetPassword-login {
+    margin: auto;
+    color: rgb(101, 178, 250);
+    margin-bottom: 25px;
+  }
+  .footer-login {
+    margin-top: 30px;
+    border: 1px solid rgb(195, 195, 195);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+  }
+  .footer-login span {
+    color: rgb(0, 66, 128);
+    font-weight: 400;
+  }
+
+  .enlaces{
+    background-color: #ee3f6e;
+    color: white;
+    border-radius: 10%;
+    margin: 5%;
+  }
+
+  .enlaces:hover{
+    background-color: #f51e57;
+    color: white;
+  }
+
+  .post{
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    margin: 3% auto;
+    background-color: #ee3f6e;
+    color: white;
+    border-radius: 5%;
+  }
+  .post:hover{
+    background-color: #f51e57;
+    color: white;
+  }

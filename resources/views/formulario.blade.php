@@ -1,68 +1,75 @@
 @extends('layout.layouts')
-@section('titulo')
-    Regístrate
-@endsection
+
+
 @section('contenido')
 
-        <div class="card">
-          <div class="card-body">
-              <form action="/formulario" method="POST">
-                @csrf
 
-
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row m-4 p-3">
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="name" name="name" class="form-control" />
-                      <label class="form-label" for="name">Nombre completo</label>
-                    </div>
-                  </div>
-                  @error('name')
-                  <p style="color:red;">{{$message}}</p>
-                  @enderror
-
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="text" id="username" name="username" class="form-control" />
-                      <label class="form-label" for="username">Nombre de usuario</label>
-                    </div>
-                  </div>
-                  @error('username')
-                  <p style="color:red;">{{$message}}</p>
-                  @enderror
+    <body class="login">
+        <div class="container-login">
+            <div class="center-login">
+                <div class="header-login">
+                    <h3>Crea tu cuenta</h3>
                 </div>
+                <div class="inputElement-login">
+                    <form action="/formulario" method="POST">
+                        @csrf
 
-                <div class="row m-4 p-3">
-                  <!-- Email input -->
-                  <div class="col">
-                    <div class="form-outline ">
-                      <input type="email" id="email" name="email" class="form-control" />
-                      <label class="form-label" for="email">Correo electrónico</label>
-                    </div>
-                  </div>
-                  @error('email')
-                  <p style="color:red;">{{$message}}</p>
-                  @enderror
+                        <div class="mb-3">
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Nombre completo" />
 
-                  <!-- Password input -->
-                  <div class="col">
-                    <div class="form-outline">
-                      <input type="password" id="password" name="password" class="form-control" />
-                      <label class="form-label" for="password">Contraseña</label>
+                        </div>
+                        @error('name')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
+
+                        <div class="mb-3">
+                            <input type="text" id="username" name="username" placeholder="Nombre de usuario"
+                                class="form-control" />
+
+                        </div>
+                        @error('username')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
+
+                        <div class="mb-3">
+                            <input type="email" id="email" placeholder="Correo electrónico" name="email"
+                                class="form-control" />
+
+                        </div>
+                        @error('email')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
+
+
+
+                        <div class="mb-3">
+                            <input type="password" id="password" name="password" placeholder="Contraseña"
+                                class="form-control" />
+
+                        </div>
+                        @error('password')
+                            <p style="color:red;">{{ $message }}</p>
+                        @enderror
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary d-block mx-auto mb-4 mt-4"
+                            style="background-color: #F20746;">Crear cuenta</button>
+
+                    </form>
+                    <div class="line">
+                        <span class="arrow-login"></span>
+                        <span class="content-login">O</span>
+                        <span class="arrow-login"></span>
                     </div>
-                  </div>
-                  @error('password')
-                  <p style="color:red;">{{$message}}</p>
-                  @enderror
+                    <div class="social__icon-login">
+                        <span>Inicia sesión con tu cuenta
+                        </span>
+                    </div>
+                    <a href="http://127.0.0.1:8000/login" class="forgetPassword-login">Inicio de sesión</a>
                 </div>
+            </div>
 
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary d-block mx-auto mb-4" style="background-color: #F20746;">Crear cuenta</button>
-
-              </form>
-
-          </div>
         </div>
+    </body>
 @endsection
-
